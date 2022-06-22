@@ -17,29 +17,38 @@ Route::get('/', function () {
 
     $data = [
 
-        'user'=>[
+        'myself'=>[
+            'nome' => 'Francesco',
+            'cognome' => 'Cataletto',
+            'anni' => 24
+        ],
 
-            'myself'=>[
-                'nome' => 'Francesco',
-                'cognome' => 'Cataletto',
-                'anni' => 24
-            ],
+        'anotheruser'=>[
+            'nome' => 'Giulio',
+            'cognome' => 'Cesare',
+            'anni' => 700
+        ],
 
-            'anotheruser'=>[
-                'nome' => 'Giulio',
-                'cognome' => 'Cesare',
-                'anni' => 700
-            ],
-
-            'thirduser'=>[
-                'nome' => 'Pino',
-                'cognome' => 'Abete',
-                'anni' => 1700
-            ]
-            
+        'thirduser'=>[
+            'nome' => 'Pino',
+            'cognome' => 'Abete',
+            'anni' => 1700
         ]
     ];
 
 
     return view('home', $data);
+});
+
+Route::get('/userOne', function () {
+
+    return view('/userOne');
+});
+Route::get('/userTwo', function () {
+
+    return view('/userTwo');
+});
+Route::get('/userThird', function () {
+
+    return view('/userThird');
 });
