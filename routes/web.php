@@ -18,9 +18,25 @@ Route::get('/', function () {
     $data = [
 
         'user'=>[
-            'nome' => 'Francesco',
-            'cognome' => 'Cataletto',
-            'anni' => 24
+
+            'myself'=>[
+                'nome' => 'Francesco',
+                'cognome' => 'Cataletto',
+                'anni' => 24
+            ],
+
+            'anotheruser'=>[
+                'nome' => 'Giulio',
+                'cognome' => 'Cesare',
+                'anni' => 700
+            ],
+
+            'thirduser'=>[
+                'nome' => 'Pino',
+                'cognome' => 'Abete',
+                'anni' => 1700
+            ]
+            
         ]
     ];
 

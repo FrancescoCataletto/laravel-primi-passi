@@ -9,9 +9,11 @@
 <body>
     <h1>HELLO WORLD</h1>
     <ul>
-        <li>{{$user['nome']}}</li>
-        <li>{{$user['cognome']}}</li>
-        <li>{{$user['anni']}}</li>
+        @foreach ($user as $us)
+            <li>{{$us['nome']}}</li>
+            <li>{{$us['cognome']}}</li>
+            <li>{{$us['anni']}}</li>
+        @endforeach
     </ul>
 </body>
 </html>
