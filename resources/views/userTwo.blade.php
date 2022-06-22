@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>GIULIO CESARE</h1>
+    <a href="{{url('/')}}"><button style="cursor: pointer">BACK TO HOMEPAGE</button></a>
 </body>
 </html>

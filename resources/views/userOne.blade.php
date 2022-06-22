@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>FRANCESCO CATALETTO</h1>
+    <a href="{{url('/')}}"><button style="cursor: pointer">BACK TO HOMEPAGE</button></a>
 </body>
 </html>
