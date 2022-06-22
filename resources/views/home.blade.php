@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>HELLO WORLD</h1>
+    <ul>
+        <li>{{$user['nome']}}</li>
+        <li>{{$user['cognome']}}</li>
+        <li>{{$user['anni']}}</li>
+    </ul>
 </body>
 </html>
